@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# MLB チケット予約アプリケーション
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MLBの試合チケットを簡単に予約・管理できるウェブアプリケーションです。
 
-## Available Scripts
+## 機能
 
-In the project directory, you can run:
+- ホームページ: 最新情報や人気チームの紹介
+- 試合一覧ページ: チーム名や日付での検索・絞り込み
+- 予約ページ: 希望の試合のチケットを予約
+- マイチケットページ: 予約したチケットの管理
 
-### `npm start`
+## 技術スタック
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- TypeScript
+- React Router
+- CSS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## インストール方法
 
-### `npm test`
+1. リポジトリをクローン:
+```
+git clone https://github.com/kentakosu0620/mlb-reservation-app.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. 依存関係をインストール:
+```
+cd mlb-reservation-app
+npm install
+```
 
-### `npm run build`
+3. アプリを実行:
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ブラウザで http://localhost:3000 を開いてアプリケーションを利用できます。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 開発
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+このプロジェクトは [Create React App](https://github.com/facebook/create-react-app) で作成されています。
 
-### `npm run eject`
+### 利用可能なスクリプト
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `npm start`: 開発モードでアプリを起動
+- `npm test`: テストを実行
+- `npm run build`: 本番用ビルドを作成
+- `npm run eject`: CRAの設定をカスタマイズ
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 今後の改善点
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ユーザー認証システムの実装
+- 支払い機能の追加
+- リアルタイムでの座席選択機能
+- モバイルアプリへの対応
