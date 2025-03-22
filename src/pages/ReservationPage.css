@@ -1,0 +1,163 @@
+.reservation-page {
+  padding: 2rem 0;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #002D72;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #CC0000;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.breadcrumb-link {
+  color: #002D72;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+  color: #CC0000;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 45, 114, 0.1);
+  border-radius: 50%;
+  border-top-color: #002D72;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.error-message h2 {
+  color: #CC0000;
+  margin-bottom: 1rem;
+}
+
+.error-message p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.back-button, .my-tickets-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.back-button {
+  background-color: #f8f9fa;
+  color: #666;
+  border: 1px solid #ddd;
+  margin-right: 1rem;
+}
+
+.back-button:hover {
+  background-color: #e9ecef;
+}
+
+.my-tickets-button {
+  background-color: #002D72;
+  color: white;
+  border: none;
+}
+
+.my-tickets-button:hover {
+  background-color: #001F4D;
+}
+
+.reservation-complete {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto 1.5rem;
+}
+
+.reservation-complete h2 {
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.reservation-complete p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.reservation-actions {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .reservation-actions {
+    flex-direction: column;
+  }
+  
+  .back-button {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+} 
